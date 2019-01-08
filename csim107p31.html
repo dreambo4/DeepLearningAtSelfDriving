@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  .my-info-btn{
+  background: #64a19d;
+  color: white;
+  border: none;
+  width: 20%;
+  margin-top: 5%;
+  padding: 2%;
+  border-radius: 5px;
+  position: relative;
+}
+.my-info-bg{
+    background: white;
+  }
+h1{
+  font-weight: bold;
+}
+</style>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>深度學習於自動駕駛研發</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <!-- Light Box core CSS -->
+  <link rel="stylesheet" href="../dist/css/lightbox.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">深度學習於自動駕駛研發</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">簡介</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">設備</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skill">相關技術</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#video">成果影片</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#member">分工/指導老師</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Deep Learning At Self-Driving</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">深度學習於自動駕駛研發</h2>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h1 class="text-white mb-4">簡介</h1>
+          <p class="text-white">　　隨著科技的發展，自動化在諸多的運輸模式中扮演的角色越來越重要，像是汽車、巴士、火車、飛機與無人機系統，自動駕駛使交通工具的概念也得以重新定義，開啟全新的時代。自駕車已成為勢不可擋的議題之一，越來越多汽車大廠、科技公司看好此項技術前景，進而投入開發。在自駕車的時代，利用強大的CPU與GPU取代人的大腦，各種的感測器、超聲波、雷達、鏡頭等器材成為自駕車的五感，再提供地圖給自駕車，使其得到及時的道路資訊，顛覆現有的行車體驗。我們利用Nvidia
+            TX2、ZED Camara、Arduino等設備，改裝遙控車。並且利用TX2使用GPU快速運算的特性，還有ZED Camara 可以判斷影像深度的功能，目標是讓自駕車可以依固定路線自動行駛。</p>
+        </div>
+      </div>
+      <img src="img/result.png" class="img-fluid" alt="" style="max-width: 50%">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light text-center">
+    <div class="container">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="text-black mb-4 text-center">設備</h1>
+      </div>
+
+      <!-- tx2 Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/TX2.png" alt="" style="padding:0 13%">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Nvidia Jetson TX2</h4>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uno Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/uno.png" alt="" style="padding:0 13% ">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Arduino Uno</h4>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/74076.png" alt="" style="padding:0 13%">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Traxxas 74076</h4>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uno Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/zed.jpg" alt="" style="max-width: 100%; padding-top: 5% 0%">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">ZED Camera</h4>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skill section -->
+  <section id="skill" class="about-section text-center projects-section">
+    <div class="container">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="text-white mb-4 text-center">相關技術</h1>
+      </div>
+
+      <!-- OpenCV Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6 my-info-bg">
+          <a href="https://opencv.org/">
+            <img class="img-fluid" src="img/opencv.png" alt="" style="padding: 13%">
+          </a>
+        </div>
+        <div class="col-lg-6" onclick="opencv()">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">OpenCV</h4>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+                <button class="my-info-btn">詳細<i class="fas fa-angle-down fa-1x text-white"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YOLO Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6 my-info-bg">
+          <a href="https://pjreddie.com/darknet/yolo/">
+            <img class="img-fluid" src="img/YOLO.png" alt="" style="padding: 15%">
+          </a>
+        </div>
+        <div class="col-lg-6 order-lg-first" onclick="yolo()">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">YOLO</h4>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+                <button class="my-info-btn">詳細<i class="fas fa-angle-down fa-1x text-white"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROS Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6 my-info-bg">
+          <a href="http://www.ros.org/">
+            <img class="img-fluid" src="img/ROS.png" alt="" style="padding: 15%">
+          </a>
+        </div>
+        <div class="col-lg-6" onclick="ros()">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">ROS</h4>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+                <button class="my-info-btn">詳細<i class="fas fa-angle-down fa-1x text-white"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arduino Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6 my-info-bg">
+          <a href="https://www.arduino.cc/">
+            <img class="img-fluid" src="img/arduino.png" alt="" style="padding: 15%">
+          </a>
+        </div>
+        <div class="col-lg-6 order-lg-first" onclick="opencv()">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Arduino</h4>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+                <button class="my-info-btn">詳細<i class="fas fa-angle-down fa-1x text-white"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup Section -->
+  <section class="signup-section" id="video">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h1 class="text-white mb-5">成果影片</h1>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/gSJArhasuHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="member" class="projects-section bg-light text-center">
+    <div class="container">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="text-black mb-4 text-center">分工</h1>
+      </div>
+
+      <!-- tx2 Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/hardware.png" alt="" style="height: 300px; width: 300px;">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">硬體</h4>
+                <h6 class="text-white">微控制器操控模型車，訊息接收與發佈</h6>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+                <p class="text-white-50" style="margin:0px">資管四B 廖浚廷</p>
+                <p class="text-white-50" style="margin:0px">資管四B 金正言</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/software.png" alt="" style="height: 300px; width: 300px; margin-top: 5%">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">軟體</h4>
+                <h6 class="text-white">影像辨識，深度學習訓練</h6>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+                <p class="text-white-50" style="margin:0px">資管四B 鍾韻茹</p>
+                <p class="text-white-50" style="margin:0px">資管四B 吳怡蓉</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="text-black mb-5" style="margin-top:10%">指導老師</h1>
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="img/teacher.jpg" alt="" style="height:50%; width: 40%;">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>洪哲倫 教授</h4>
+            <p class="text-black-50 mb-0">學歷 : 清華大學資訊工程博士</p>
+            <p class="text-black-50 mb-0">研究專長 : 平行與分散式計算、深度學習、醫學影像分析、生物資訊、智慧製造與機械</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Jeffery in PU 2018
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- sweetalert JS -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+  <!-- Custom sweetalert function -->
+  <!-- <script src="js/swal.js"></script> -->
+  <script>
+    // opencv intro
+    function opencv() {
+      swal("OpenCV", "提供影像處理或電腦視覺的函式庫，我們會用opencv來進行影像處理。像是圖片的分割處理、灰階調節，或是像我們把拍到的影像呈現在畫面上");
+    }
+    // yolo intro
+    function yolo() {
+      swal("YOLO", "YOLO主要是做來即時物件的偵測，利用了深度學習讓YOLO準確辨識出物件，並且用方型的框將辨識出的物件框起來");
+    }
+    //ROS intro
+    function ros() {
+      swal("ROS", "ROS全名為Robot Operating System也就是機器人作業系統，是專為機器人軟體開發所設計出來的一套電腦作業系統架構。能夠作為程式與程式之間溝通的橋樑");
+    }
+    //Arduino intro
+    function arduino() {
+      swal("Arduino", "Arduino的微處理暨和控制器能夠讓我們去控制我們所要控制的硬體設備");
+    }
+  </script>
+</body>
+
+</html>
+
+<!-- Featured Project Row 
+<div class="row align-items-center no-gutters mb-4 mb-lg-5">
+    <div class="col-xl-8 col-lg-7">
+      <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+    </div>
+    <div class="col-xl-4 col-lg-5">
+      <div class="featured-text text-center text-lg-left">
+        <h4>Shoreline</h4>
+        <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+      </div>
+    </div>
+  </div>
+
+  Project One Row 
+  <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+    <div class="col-lg-6">
+      <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+    </div>
+    <div class="col-lg-6">
+      <div class="bg-black text-center h-100 project">
+        <div class="d-flex h-100">
+          <div class="project-text w-100 my-auto text-center text-lg-left">
+            <h4 class="text-white">Misty</h4>
+            <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+            <hr class="d-none d-lg-block mb-0 ml-0">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   Project Two Row
+  <div class="row justify-content-center no-gutters">
+    <div class="col-lg-6">
+      <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+    </div>
+    <div class="col-lg-6 order-lg-first">
+      <div class="bg-black text-center h-100 project">
+        <div class="d-flex h-100">
+          <div class="project-text w-100 my-auto text-center text-lg-right">
+            <h4 class="text-white">Mountains</h4>
+            <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+            <hr class="d-none d-lg-block mb-0 mr-0">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
